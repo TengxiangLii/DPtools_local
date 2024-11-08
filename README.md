@@ -49,7 +49,6 @@ pip install --upgrade cmake
 Install the dptools library in python:
 ```bash
 cd path/to/your/source_code
-pip install .
 ```
 Configure the project (in your build directory):
 ```bash
@@ -58,7 +57,11 @@ cmake ..
 ```
 Compile the code:
 ```bash
-cmake --install
+cmake --install .
+```
+Go back to the source code:
+```
+pip install .
 ```
 Add the installation directory (your actual installation path) to ``PATH``:
 ```bash
